@@ -36,6 +36,56 @@
 	<link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.carousel {
+			width: 100%;
+		  }
+		  
+		  .slide-box {
+			display: flex;
+			justify-content: space-between;
+		  }
+		  
+		  @media (min-width: 576px) and (max-width: 767.98px) {
+			.slide-box img {
+			  -ms-flex: 0 0 50%;
+			  flex: 0 0 50%;
+			  max-width: 50%;
+			}
+		  }
+		  
+		  @media (min-width: 768px) and (max-width: 991.98px) {
+			.slide-box img {
+			  -ms-flex: 0 0 33.3333%;
+			  flex: 0 0 33.3333%;
+			  max-width: 33.3333%;
+			}
+		  }
+		  
+		  @media (min-width: 992px)
+		  {
+			.slide-box img {
+			  -ms-flex: 0 0 25%;
+			  flex: 0 0 25%;
+			  max-width: 100%;
+			}
+		  }
+		  
+		  .carousel-caption {
+			background-color: rgba(0, 0, 0, 0.5);
+			padding: 20px;
+			border-radius: .5rem;
+		  }
+		
+		  
+		  .carousel-control-prev-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2317a2b8' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+		   }
+		   
+		   .carousel-control-next-icon {
+			 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2317a2b8' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+		   }
+	</style>	
 	
 
 </head>
@@ -105,31 +155,39 @@ Sticky Navigation
 
       <div class="collapse navbar-collapse" id="navbar01">
         <ul class="navbar-nav navigation-menu ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item dropdown ">
-			<a class="nav-link dropdown-toggle " href="#" id="dropdown03" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products<span class="ion-ios-arrow-down"></span></a>
-			<ul class="dropdown-menu" aria-labelledby="dropdown03">
-				<li><a class="dropdown-item" href="energy-saving-double-low-E.html">Energy Saving Double Low-E Insulating Glass Unit</a></li>
-				<li><a class="dropdown-item" href="curved-tempered-glass.html">Curved Tempered-glass,Curved Laminated-glass,Curve</a></li>
-				<li><a class="dropdown-item" href="sgp-pvb.html">Safety and Energy Saving Laminated-glass(SGP、PVB)</a></li>
-				<li><a class="dropdown-item" href="fully-tempered.html">Fully Tempered, Heat Strengthened Glass</a></li>
-				<li><a class="dropdown-item" href="ceramic-frit.html">Ceramic Frit Glass</a></li>
-				<li><a class="dropdown-item" href="hollow-shatter.html">Hollow Shatter Glass</a></li>
-				<li><a class="dropdown-item" href="dimming.html">Dimming Glass</a></li>
-				<li><a class="dropdown-item" href="bulletproof.html">Bullet Proof Glass</a></li>
-				<li><a class="dropdown-item" href="fire-resistant.html">Fire Resistant Glass</a></li>
-				<li><a class="dropdown-item" href="self-cleaning.html">Self-Cleaning Glass</a></li>
-			</ul>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle " href="#" id="dropdown02" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<span class="ion-ios-arrow-down"></span></a>
+			  <ul class="dropdown-menu" aria-labelledby="dropdown02">
+				  <li><a class="dropdown-item d-none" href="#about">About us</a></li>
+				  <li><a class="dropdown-item" href="aboutus.html">About us</a></li>
+				  <li><a class="dropdown-item" href="aboutus.html#Culture">Company Culture</a></li>
+				  <li><a class="dropdown-item" href="aboutus.html#Equipment">Company Equipment</a></li>
+				  <li><a class="dropdown-item" href="aboutus.html#pricing">Company Credentials</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle " href="#" id="dropdown03" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products<span class="ion-ios-arrow-down"></span></a>
+			  <ul class="dropdown-menu" aria-labelledby="dropdown03">
+				  <li><a class="dropdown-item d-none" href="#portfolio">All Products</a></li>
+				  <li><a class="dropdown-item" href="energy-saving-double-low-E.html">Energy Saving Double Low-E Insulating Glass Unit</a></li>
+				  <li><a class="dropdown-item" href="curved-tempered-glass.html">Curved Tempered-glass,Curved Laminated-glass,Curve</a></li>
+				  <li><a class="dropdown-item" href="sgp-pvb.html">Safety and Energy Saving Laminated-glass(SGP、PVB)</a></li>
+				  <li><a class="dropdown-item" href="fully-tempered.html">Fully Tempered, Heat Strengthened Glass</a></li>
+				  <li><a class="dropdown-item" href="ceramic-frit.html">Ceramic Frit Glass</a></li>
+				  <li><a class="dropdown-item" href="hollow-shatter.html">Hollow Shatter Glass</a></li>
+				  <li><a class="dropdown-item" href="dimming.html">Dimming Glass</a></li>
+				  <li><a class="dropdown-item" href="bulletproof.html">Bullet Proof Glass</a></li>
+				  <li><a class="dropdown-item" href="fire-resistant.html">Fire Resistant Glass</a></li>
+				  <li><a class="dropdown-item" href="self-cleaning.html">Self-Cleaning Glass</a></li>
+			  </ul>
 		</li>
 		
           
           <li class="nav-item">
-            <a class="nav-link" href="#our-project">Projects</a>
+            <a class="nav-link" href="index.html#our-project">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#pricing">Credentials</a>
@@ -187,7 +245,7 @@ End Sticky Navigation
 	</div> <!-- End container -->
 </section> <!-- End section -->
 
-<section class="section about-2 padding-0 bg-dark" id="about">
+<section class="section about-2 padding-0 bg-dark" id="Culture">
 	<div class="container-fluid p-0">
 		<div class="row no-gutters align-items-center">
 			<div class="col-lg-6">
@@ -600,7 +658,7 @@ Start Call To Action
 	</div> <!-- End container -->
 </section> <!-- End section -->
 
-<section class="bg-one about section">
+<section class="bg-one about section" id="Concept">
 	<div class="container bg-dark text-white" >
 		<div class="row">
 
@@ -689,7 +747,7 @@ Start Counter Section
 <!-- 
 Start Our project
 =========================================== -->
-<section class="bg-one about section">
+<section class="bg-one about section" id="Equipment">
 	<div class="container bg-dark text-white" >
 		<div class="row">
 
@@ -710,6 +768,7 @@ Start Our project
 				<img class="img-fluid mb-50 mx-auto d-block" src="images\about\junfa7.jpg" alt="blog-image">
 				<img class="img-fluid mb-50 mx-auto d-block" src="images\about\junfa8.jpg" alt="blog-image">
 				<img class="img-fluid mb-50 mx-auto d-block" src="images\about\junfa9.jpg" alt="blog-image">
+				
 
 				
 	
@@ -733,64 +792,145 @@ Start Our project
 				</div>
 				<!-- /section title -->
 			</div>
+			<div class="container">
+				<div class="row">
+				  <div id="carousel" class="carousel slide" data-ride="carousel">
+					
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<div class="d-none d-lg-block">
+						  <div class="slide-box">
+							<div class="filtr-item col-lg-3 col-md-6">
+								<div class="portfolio-block">
+									<img src="images/cert/ISO9001.jpg" alt="ISO9001">
+									<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/cert/ISO9001.jpg"
+											data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4>ISO9001</h4>	
+									</div>
+								</div>
+							</div>
+							<div class="filtr-item col-lg-3 col-md-6">
+								<div class="portfolio-block">
+									<img src="images/cert/PAS.jpg" alt="PAS">
+									<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/cert/PAS.jpg"
+											data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4>PAS</h4>	
+									</div>
+								</div>
+							</div>
+							<div class="filtr-item col-lg-3 col-md-6">
+								<div class="portfolio-block">
+									<img src="images/cert/CCC.jpg" alt="CCC">
+									<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/cert/CCC.jpg"
+											data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4>CCC</h4>	
+									</div>
+								</div>
+							</div>
+							<div class="filtr-item col-lg-3 col-md-6">
+								<div class="portfolio-block">
+									<img src="images/cert/BulletProof.jpg" alt="BulletProof">
+									<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/cert/BulletProof.jpg"
+											data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4>Bullet Proof</h4>	
+									</div>
+								</div>
+							</div>
+						  </div>
+						</div>
+						
+						
+					  </div>
+					  <div class="carousel-item">
+						<div class="d-none d-lg-block">
+						  <div class="slide-box">
+							<div class="filtr-item col-lg-3 col-md-6">
+								<div class="portfolio-block">
+									<img src="images/cert/CCC product certification.jpg" alt="CCC product certification">
+									<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/cert/CCC product certification.jpg"
+											data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4>CCC Product Certification</h4>	
+									</div>
+								</div>
+							</div>
+							<div class="filtr-item col-lg-3 col-md-6">
+								<div class="portfolio-block">
+									<img src="images/cert/Quality, reputation double protection demonstration unit.jpg" alt="">
+									<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/cert/Quality, reputation double protection demonstration unit.jpg"
+											data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4><a href="energy-saving-double-low-E.html">Quality, reputation double protection demonstration unit</a></h4>	
+									</div>
+								</div>
+							</div>
+							<div class="filtr-item col-lg-3 col-md-6">
+								<div class="portfolio-block">
+									<img src="images/cert/Inspection Report of Single Fire-proof Glass 12-c1.jpg" alt="Inspection Report of Single Fire-proof Glass 12-c1">
+									<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/cert/Inspection Report of Single Fire-proof Glass 12-c1.jpg"
+											data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4>Inspection Report of Single Fire-proof Glass 12-c1</h4>	
+									</div>
+								</div>
+							</div>
+							<div class="filtr-item col-lg-3 col-md-6">
+								<div class="portfolio-block">
+									<img src="images/cert/Quality, reputation double protection demonstration unit.jpg" alt="">
+									<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/cert/Quality, reputation double protection demonstration unit.jpg"
+											data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4><a href="energy-saving-double-low-E.html">Quality, reputation double protection demonstration unit</a></h4>	
+									</div>
+								</div>
+							</div>
+							
+						  </div>
+						</div>
+						
+					  </div>
+					</div>
+					<!--<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Next</span>
+					</a>-->
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-12"><p> </P></div>
+			<div class="col-12">
+				
+				<div >
+					
+					<button class="prev-button btn btn-info carousel-control-prev" href="#carousel" role="button" data-slide="prev">&#8249;</button>
+					<button class="next-button btn btn-info carousel-control-next" href="#carousel" role="button" data-slide="next">&#8250;</button>
+                </div>
+            </div>
 			
-			<!-- single pricing table -->
-			<div class="col-lg-3 col-md-6 text-center wow fadeInUp" data-wow-duration="200ms">
-				<div class="price-item">
-					<div class="member-photo">
-						<img class="img-fluid" src="images/cert/ISO9001.jpg" alt="Meghna">
-					</div>
-					<div class="price-title">
-						<h3>ISO9001</h3>
-					</div>
-				</div>
-			</div>
-			<!-- end single pricing table -->
-
-			<!-- single pricing table -->
-			<div class="col-lg-3 col-md-6 text-center wow fadeInUp" data-wow-duration="500ms"
-				data-wow-delay="400ms">
-				<div class="price-item">
-
-					<div class="member-photo">
-						<img class="img-fluid" src="images/cert/PAS.jpg" alt="Meghna">
-					</div>
-					<div class="price-title">
-						<h3>PAS</h3>
-					</div>
-
-				</div>
-			</div>
-			<!-- end single pricing table -->
-
-			<!-- single pricing table -->
-			<div class="col-lg-3 col-md-6 text-center wow fadeInUp" data-wow-duration="500ms"
-				data-wow-delay="600ms">
-				<div class="price-item">
-					<div class="member-photo">
-						<img class="img-fluid" src="images/cert/CCC.jpg" alt="Meghna">
-					</div>
-					<div class="price-title">
-						<h3>CCC</h3>
-					</div>
-				</div>
-			</div>
-			<!-- end single pricing table -->
-
-			<!-- single pricing table -->
-			<div class="col-lg-3 col-md-6 text-center wow fadeInUp" data-wow-duration="500ms"
-				data-wow-delay="750ms">
-				<div class="price-item">
-					<div class="member-photo">
-						<img class="img-fluid" src="images/cert/BulletProof.jpg" alt="Meghna">
-					</div>
-					<div class="price-title">
-						<h3>Bullet Proof</h3>
-					</div>
-				</div>
-			</div>
-			<!-- end single pricing table -->
-
 
 		</div> <!-- End row -->
 	</div> <!-- End container -->
@@ -924,6 +1064,7 @@ Start Our project
 				</div> <!-- end testimonial wrapper -->
 			</div> <!-- end col lg 12 -->
 		</div> <!-- End row -->
+		
 	</div> <!-- End container -->
 </section> <!-- End Section -->
 
